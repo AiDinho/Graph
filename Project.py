@@ -28,6 +28,7 @@ EX_GRAPH2={0:set([1,5,4]),
 def make_graph(num_nodes):
     """Helper function to make_complete_graph
        takes no of nodes and provide a complete graph
+       temp and attri are loop variables ,think as i,j
     """
     graph={}
     val=[temp for temp in range(num_nodes)]
@@ -49,6 +50,7 @@ def compute_in_degrees(digraph):
     """ computes in degrees of a given graph and return a 
         dictionary where each node is key and their corresponding 
         in-degree is value
+        temp1,hold ,tem  are loop variables
     """
     counts=dict([temp1,0] for temp1 in digraph)
     for hold in digraph.values():
